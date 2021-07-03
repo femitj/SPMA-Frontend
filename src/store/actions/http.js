@@ -2,7 +2,7 @@ import axios from 'axios';
 import { toast } from 'react-toastify';
 import { hideLoader } from '../../helpers/loader';
 
-let baseUrl = '';
+let baseUrl = 'https://spma-backend.herokuapp.com';
 
 if (process.env.REACT_APP_NODE_ENV === 'development') {
   baseUrl = 'http://127.0.0.1:8080';
