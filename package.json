@@ -1,0 +1,60 @@
+{
+  "name": "spma-frontend",
+  "version": "1.0.0",
+  "description": "SPMA Frontend",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "buildapp": "npm run build-css && react-scripts build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://femitj:supersonic10*@github.com/femitj/SPMA-Frontend.git"
+  },
+  "author": "Tijani Femi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/femitj/SPMA-Frontend/issues"
+  },
+  "homepage": "https://github.com/femitj/SPMA-Frontend#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "datatables.net": "^1.10.20",
+    "datatables.net-bs4": "^1.10.20",
+    "datatables.net-buttons-bs4": "^1.6.1",
+    "datatables.net-responsive": "^2.2.3",
+    "escape-string-regexp": "^2.0.0",
+    "jquery": "^3.4.1",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-google-places-autocomplete": "^3.3.1",
+    "react-hold-on": "^1.0.1",
+    "react-id-swiper": "^4.0.0",
+    "react-loader-spinner": "^3.1.5",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.1.1",
+    "react-toast-notifications": "^2.2.5",
+    "react-toastify": "^5.4.0",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.88.1",
+    "swiper": "^5.2.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

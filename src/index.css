@@ -1,0 +1,108 @@
+button:focus {
+  outline: 0;
+}
+footer {
+  margin-bottom: 0px !important;
+}
+
+a:hover {
+  list-style: none !important;
+}
+
+.signup__banner {
+  height: 100vh !important;
+}
+
+.btn__signup {
+  margin-bottom: 6% !important;
+}
+
+.hide_form {
+  display: none !important;
+}
+
+.set_min_height {
+  min-height: 37px !important;
+}
+
+.progress {
+  height: 70rem;
+}
+
+/* .overlay {
+  top: 0px !important;
+} */
+
+.progress__texts {
+  color: black !important;
+}
+
+#signup-action {
+  width: 100%;
+}
+
+@media (max-width: 426px) {
+  .login1-form {
+    width: 100% !important;
+  }
+}
+
+/* #autn-info {
+  text-align: center;
+  padding: 10%;
+} */
+
+#allForms {
+  margin-bottom: 0px !important;
+}
+
+.half-width {
+  width: 50%;
+  display: inline-block;
+}
+
+.m-r-10 {
+  margin-right: 10px;
+}
+
+.popup-div2 {
+  /* padding-left: 10px; */
+  border-left: 1px solid;
+}
+
+.label--3 {
+  width: 50%;
+}
+
+.label--2-i {
+  background: none !important;
+  text-align: left;
+}
+
+.label--2-i:hover {
+  color: black !important;
+}
+
+.close-span {
+  padding: 30px;
+  cursor: pointer;
+}
+
+.close-span:hover {
+  color: #c11f25;
+}
+
+.saving-radio-label {
+  padding: 1rem !important;
+  margin-bottom: 3% !important;
+}
+
+.container-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  flex-direction: column;
+}

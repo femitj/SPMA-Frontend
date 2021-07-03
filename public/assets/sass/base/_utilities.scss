@@ -1,0 +1,141 @@
+//? Margins
+
+.mt-1-5p {
+  margin-top: 1.5%;
+}
+
+.mt-3 {
+  margin-top: 3%; 
+}
+
+.mt-6p {
+  margin-top: 4%; 
+}
+
+.mt-6 {
+  margin-top: 6%;
+}
+
+.mt-40p {
+  margin-top: 40%;
+}
+
+.mb-5 {
+  margin-bottom: 5%;
+}
+
+.mb-12 {
+  margin-bottom: 12%;
+}
+
+.m-none {
+  margin: 0 !important;
+}
+
+
+
+//? Backgrounds
+
+.grey-bg {
+  background: #EBEBEB;
+}
+
+.blue-bg {
+  background: $blue-color;
+}
+
+.red-bg {
+  background: $red-color;
+}
+.green-bg {
+  background: $green-color;
+}
+
+//? Display
+
+.tab-d {
+  @include respond(tab-land2) {
+    display: none !important;
+  }
+}
+
+.phone-d {
+  @include respond(l-phone2) {
+    display: none !important;
+  }
+}
+
+.phone-sx-d {
+  @include respond(sx-phone) {
+    display: none !important;
+  }
+}
+
+.logo-d {
+  display: none;
+
+  @include respond(tab-land2) {
+    display: flex;
+  }
+}
+
+//? Colors
+
+.green-color {
+  color: #5FB391;
+}
+
+.red-color {
+  color: #C9472C;
+}
+
+.red-color2 {
+  color: #D72329;
+}
+
+.blue-color {
+  color: #2ca7e0;
+}
+
+.white-color {
+  color: #fff;
+}
+
+.black-color {
+  color: #000;
+}
+
+.grey-color {
+  color: #707070;
+}
+
+//? Positions
+
+.unset {
+  position: unset;
+}
+
+//? Widths
+
+.w50 {
+  width: 50%;
+
+  @include respond(l-phone2) {
+    width: 100%;
+  }
+}
+
+.w100 {
+  width: 100%;
+}
+
+//? Heights
+
+.h140vh {
+    height: 140vh;
+}
+
+//? Layout
+.fxd-c {
+  flex-direction: column;
+}
