@@ -1,0 +1,225 @@
+.footer {
+  background: #040916;
+  margin-top: 10.8rem;
+
+  &--set {
+    @include respond(tab-land2) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+
+  &__content {
+    padding: 3% 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @include respond(desktop-min) {
+      padding: 4% 8%;
+    }
+
+    @include respond(tab-land2) {
+      flex-direction: column;
+    }
+  }
+
+  &__link {
+    @include respond(tab-land2) {
+      @include footer-width;
+    }
+
+    &__items {
+      list-style-type: none;
+    }
+
+    &__item {
+      margin-bottom: 3%;
+
+      @include respond(l-phone2) {
+        margin-bottom: 4%;
+      }
+    }
+
+    &__title {
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: $white-color;
+      text-decoration: none;
+      margin-bottom: 4%;
+
+      @include respond(tab-land2) {
+        font-size: 3.2rem;
+      }
+
+      @include respond(l-phone2) {
+        font-size: 3rem;
+      }
+    }
+
+    &__text {
+      font-size: 1.4rem;
+      color: $white-color;
+      text-decoration: none;
+      margin-bottom: 3%;
+
+      @include respond(tab-land2) {
+        font-size: 2.8rem;
+      }
+
+      @include respond(l-phone2) {
+        font-size: 2.4rem;
+      }
+
+      &__link {
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  &__contact {
+    @include respond(tab-land2) {
+      @include footer-width;
+    }
+  }
+
+  &__subcribe {
+    @include respond(tab-land2) {
+      @include footer-width;
+    }
+  }
+
+  &__input-container {
+    display: flex;
+  }
+
+  &__input {
+    padding: 1rem 1.8rem;
+    font-size: 1.2rem;
+    color: $white-color;
+    background: rgba(255, 255, 255, 0.2);
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    width: 70%;
+    outline: none;
+    border: none;
+
+    @include respond(tab-land2) {
+      padding: 4rem 3.8rem;
+      font-size: 3.2rem;
+    }
+
+    @include respond(l-phone2) {
+      padding: 3rem 3.8rem;
+      font-size: 2.2rem;
+    }
+
+    &::placeholder {
+      color: $white-color;
+      font-size: 1.2rem;
+
+      @include respond(tab-land2) {
+        font-size: 3.2rem;
+      }
+
+      @include respond(l-phone2) {
+        font-size: 2.2rem;
+      }
+    }
+
+    &__btn {
+      font-size: 1.2rem;
+      color: $white-color;
+      width: 33%;
+      margin-left: -3%;
+      background: #d72329;
+      outline: 0;
+      border: none;
+      border-top-right-radius: 100px;
+      border-bottom-right-radius: 100px;
+      cursor: pointer;
+
+      @include respond(tab-land2) {
+        font-size: 3.2rem;
+      }
+
+      @include respond(l-phone2) {
+        font-size: 2.2rem;
+      }
+
+      &:hover {
+        background: $dark-red-color;
+      }
+    }
+  }
+  
+  &__apps {  
+    @include respond(tab-land2) {
+      width: 100%;
+      @include footer-width;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    width: 100%;
+  }
+
+  &__button {
+    
+    @include respond(tab-land2) {
+      width: 33%;
+    }
+
+    @include respond(l-phone2) {
+      width: 50%;
+    }
+
+    &__img {
+      width: 100%;
+    }
+  }
+
+  &__line {
+    border: 0.46px solid $white-color;
+  }
+
+  &__bottom {
+    display: flex;
+    padding: 1% 4%;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond(desktop-min) {
+      padding: 1% 8%;
+    }
+
+    @include respond(l-phone2) {
+      justify-content: center;
+    }
+  }
+
+  &__social-medias {
+    flex: 0 0 10%;
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(l-phone2) {
+      display: none;
+    }
+  }
+
+  &__social-media {
+    &:hover {
+      fill: $primary-color;
+    }
+  }
+}
+
+.footer__button:hover > * > * {
+  stroke: $primary-color;
+}

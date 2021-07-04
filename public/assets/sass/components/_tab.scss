@@ -1,0 +1,78 @@
+.tab {
+  border: 0.5px solid $primary-color;
+  border-radius: 6px;
+  display: flex;
+  width: 100%;
+
+  &__item {
+    width: 33.33333333333333%;
+    padding: 1.8rem 0;
+    border: none;
+    outline: 0;
+    background: transparent;
+
+    &:not(:first-child) {
+      border-left: 0.5px solid $primary-color;
+    }
+
+    &:first-child {
+      border-radius: 6px 0 0 6px;
+    }
+
+    &:last-child {
+      border-radius: 0 6px 6px 0;
+    }
+
+    &:hover {
+      color: $white-color;
+      background: $primary-color;
+    }
+  }
+}
+
+.w3-red {
+  color: $white-color;
+  background: $primary-color;
+}
+
+.tab2 {
+  width: 100%;
+}
+
+.tab-group {
+  list-style: none;
+  padding: 0;
+  margin: 4% 0 0 0;
+  display: flex;
+}
+.tab-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.tab-group li a {
+  display: block;
+  text-decoration: none;
+  padding: 1.5rem;
+  background: #EBEBEB;
+  border-top: 4px solid #d8d8d8;
+  font-size: 2rem;
+  float: left;
+  width: 100%;
+  color: #595D5F;
+  text-align: center;
+  cursor: pointer;
+  transition: .5s ease;
+}
+.tab-group li a:hover {
+  background: #F7F7F7;
+}
+.tab-group .active a {
+  background: $white-color;
+  border-top: 4px solid $primary-color;
+  color: $black-color;
+}
+
+.tab-content > div:last-child {
+  display: none;
+}
